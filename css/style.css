@@ -103,42 +103,6 @@ section {
     color: var(--primary) !important;
 }
 
-@media (max-width:991px) {
-    .header-btn{
-        display: none;
-    }
-    .menu{
-        position: fixed;
-        top: 85px;
-        right: -100%;
-        width: 80%;
-        background-color: var(--bg-blue);
-        padding: 0px 30px;
-        overflow: hidden;
-        height: 100%;
-        
-        transition: .3s ;
-        
-    }
-    header ul{
-        display: flex;
-        flex-direction: column;
-        margin-top: 30px;
-    }
-    .opened{
-        right: 0%;
-    }
-    .nav-link{
-        
-        margin-top: 10px;
-        padding-left: 5px !important;
-        border-bottom: 1px solid rgba(63, 63, 63, 0.247);
-    }
-    .menu-btn{
-        display: block !important;
-        cursor: pointer;
-    }
-}
 .menu-btn p:not(.menu-btn p:nth-child(2)){
     transition: transform .3s;
 }
@@ -164,14 +128,6 @@ h1{
     margin: 20px 0;
     font-weight: 600;
     font-size: 50px;
-}
-@media (max-width:767px) {
-    h1{
-        font-size: 35px;
-    }
-    h2{
-        font-size: 25px !important;
-    }
 }
 main .images::after{
     content: "";
@@ -213,16 +169,18 @@ main .images::after{
     width: 90%;
     height: 75%;
     top: 0;
-    background:var(--gradient-1);
+    background: var(--gradient-1);
     opacity: .3;
     z-index: -1;
     top: 50%;
     transform: translateY(-50%);
 }
 .box-right::after {
+    left: 0;
     clip-path:  polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 40%);
 }
 .box-left::after{
+    right: 0;
     transform: translate(5%, -50%);
     clip-path: polygon(90% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
 }
@@ -257,4 +215,62 @@ main .images::after{
 
 .blog-btn:hover{
     color: var(--primary);
+}
+@media (max-width:991px) {
+    .header-btn{
+        display: none;
+    }
+    .menu{
+        position: fixed;
+        top: 85px;
+        right: -100%;
+        width: 80%;
+        background-color: var(--bg-blue);
+        padding: 0px 30px;
+        overflow: hidden;
+        height: 100%;
+        
+        transition: .3s ;
+        
+    }
+    header ul{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .opened{
+        right: 0%;
+    }
+    .nav-link{
+        
+        margin-top: 10px;
+        padding-left: 5px !important;
+        border-bottom: 1px solid rgba(63, 63, 63, 0.247);
+    }
+    .menu-btn{
+        display: block !important;
+        cursor: pointer;
+    }
+        .box-left::after,
+        .box-right::after {
+        left: auto ;
+        right: auto ;
+        }
+}
+@media (max-width:767px) {
+    h1{
+        font-size: 35px;
+    }
+    h2{
+        font-size: 25px ;
+    }
+    .team-logo{
+        width: 100px;
+    }
+    .box-left::after,
+    .box-right::after{
+        left: auto ;
+        right: auto ;
+        height: 50% ;
+    }
 }
