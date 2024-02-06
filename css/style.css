@@ -11,7 +11,8 @@
 body {
     font-family: 'Oxanium', sans-serif;
     background-image: url(../images/body-bg.jpg);
-    background-size: cover;
+    /* background-size: cover; */
+    background-repeat: repeat;
 }
 
 ::-webkit-scrollbar {
@@ -122,7 +123,7 @@ a{
 }
 main{
     /* height: 100vh; */
-    margin-top: 100px;
+    padding-top: 100px;
 }
 h1{
     margin: 20px 0;
@@ -216,6 +217,62 @@ main .images::after{
 .blog-btn:hover{
     color: var(--primary);
 }
+
+.scroll-btn{
+    width: 40px;
+    clip-path: polygon(0% 0%, 70% 0, 100% 30%, 100% 100%, 0 100%);
+        
+}
+
+.footer-icon{
+    font-size: 18px;
+    margin-inline: 5px;
+    background-color: #9841ff44;
+    padding: 10px;
+    transition: background-color .3s ;
+    clip-path: polygon(0% 0%, 70% 0, 100% 30%, 100% 100%, 0 100%);
+
+}
+.footer-icon:hover{
+    background-color: var(--primary);
+}
+.footer-link{
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+.footer-link:hover{
+    color: var(--primary);
+}
+.footer-input{
+    border: 1px solid var(--primary);
+    background-color: var(--bg-blue);
+    padding: 10px ;
+    color: white;
+}
+.footer-header{
+    width: fit-content;
+}
+.footer-header::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 5px;
+    background-color: var(--primary);
+    bottom: -5px;
+    left: 0;
+    transition: .3s;
+}
+.footer-header:hover::after{
+    width: 100%;
+}
+
+@media (max-width:1199px) {
+    .timer {
+            transform: translateX(0) !important;
+        }
+} 
+
 @media (max-width:991px) {
     .header-btn{
         display: none;
@@ -251,12 +308,14 @@ main .images::after{
         display: block !important;
         cursor: pointer;
     }
-        .box-left::after,
-        .box-right::after {
+    .box-left::after,
+    .box-right::after {
         left: auto ;
         right: auto ;
-        }
+    }
+    
 }
+
 @media (max-width:767px) {
     h1{
         font-size: 35px;
@@ -267,10 +326,5 @@ main .images::after{
     .team-logo{
         width: 100px;
     }
-    .box-left::after,
-    .box-right::after{
-        left: auto ;
-        right: auto ;
-        height: 50% ;
-    }
+   
 }

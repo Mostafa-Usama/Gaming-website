@@ -32,16 +32,16 @@
                     
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active text-white px-4 fw-bold" aria-current="page" href="#">HOME</a>
+                            <a class="nav-link active text-white px-4 fw-bold" aria-current="page" href="#home">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-white px-4 fw-bold" aria-current="page" href="#">TOURNAMENT</a>
+                            <a class="nav-link active text-white px-4 fw-bold" aria-current="page" href="#tour">TOURNAMENT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-white px-4 fw-bold" aria-current="page" href="#">NEWS</a>
+                            <a class="nav-link active text-white px-4 fw-bold" aria-current="page" href="#news">NEWS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-white px-4 fw-bold" aria-current="page" href="#">CONTACT</a>
+                            <a class="nav-link active text-white px-4 fw-bold" aria-current="page" href="#foot">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -50,8 +50,11 @@
         </nav>
     </header>
 
+    <div class="position-fixed z-3" style="bottom: 30px; right: 30px;">
+        <a href="#home"><button class="btn scroll-btn"><i class="fas fa-arrow-up"></i></button></a>
+    </div>
 
-    <main>
+    <main id="home">
         <div class="container">
             <div class="d-flex flex-column justify-content-evenly align-items-center">
                 <div class="mt-5 text-white  text-center ">
@@ -67,7 +70,7 @@
         </div>
     </main>
 
-    <section >
+    <section id="tour" >
         <div class="container">
             <div class="heading">
                 <h5>UPCOMING MATCHES</h5>
@@ -84,7 +87,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 text-center" style="transform: translateX(8px);">
+                <div class="col-lg-2 text-center timer" style="transform: translateX(8px);">
                     <h3 class="fw-bold" style="font-size: 60px;">10:00</h3>
                     <h6>25th Feb 2024</h6>
                     <i class="fab fa-youtube px-2 icon" style="font-size: 22px;"></i>
@@ -108,7 +111,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 text-center" style="transform: translateX(8px);">
+                <div class="col-lg-2 text-center timer" style="transform: translateX(8px);">
                     <h3 class="fw-bold" style="font-size: 60px;">12:30</h3>
                     <h6>28th Feb 2024</h6>
                     <i class="fab fa-youtube px-2 icon" style="font-size: 22px;"></i>
@@ -132,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 text-center" style="transform: translateX(8px);">
+                <div class="col-lg-2 text-center timer" style="transform: translateX(8px);">
                     <h3 class="fw-bold" style="font-size: 60px;">08:15</h3>
                     <h6>30th Feb 2024</h6>
                     <i class="fab fa-youtube px-2 icon" style="font-size: 22px;"></i>
@@ -144,7 +147,7 @@
                             <h2>RESTING CRAZY FACES</h2>
                             <button class="btn" style="transform: translateY(40%);">WATCH LIVE</button>
                         </div>
-                        <img src="images/team-logo-6.png" class="img-fluid team-logo" width="180" alt="">
+                        <img src="images/team-logo-6.png" class="img-fluid team-logo" width="160" alt="">
                     </div>
                 </div>
                
@@ -152,7 +155,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="news">
         <div class="container">
             <div class="heading">
                 <h5>What's On Our Mind</h5>
@@ -160,51 +163,51 @@
                 <p>Our success in creating business solutions is due in large part to our talented and highly committed team.</p>
             </div>
             <div class="row gy-5 my-5">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="position-relative">
                         <img src="images/news-1.jpg" class="img-fluid" alt="">
                         <button class="position-absolute bottom-0 start-0 no-hover">Business</button>
                     </div>
                     <div class="p-4" style="background-color: var(--bg-blue);">
-                        <div class="d-flex gap-3 text-white align-items-center ">
-                            <i class="fas fa-calendar" style="font-size: 14px; color: var(--primary);"></i>
-                            <h6 class="m-0" style="font-size: 14px;">JAN 05 2024</h6>
-                            <i class="fas fa-user-alt" style="font-size: 14px; color: var(--primary);"></i>
-                            <h6 class="m-0" style="font-size: 14px;">JOHN DOE</h6>
+                        <div class="d-flex text-white  ">
+                            <i class="fas fa-calendar me-1" style="font-size: 14px; color: var(--primary);"></i>
+                            <h6 class="m-0 me-3" style="font-size: 13px;">JAN 05 2024</h6>
+                            <i class="fas fa-user-alt me-1" style="font-size: 14px; color: var(--primary);"></i>
+                            <h6 class="m-0" style="font-size: 13px;">JOHN DOE</h6>
                         </div>
                         <h5 class="my-3" ><a class="text-white fw-bold  blog-link"  href="#">Innovative Business All Over The World.</a></h5>
                         <p class="text-white opacity-75">Financial experts support or help you to to find out which way you can raise your funds more...</p>
                         <button class="blog-btn"> <i class="fas fa-long-arrow-alt-right pe-2" style="color: var(--primary);"></i> READ MORE</button>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="position-relative">
                         <img src="images/news-2.jpg" class="img-fluid" alt="">
                         <button class="position-absolute bottom-0 start-0 no-hover">Startup</button>
                     </div>
                     <div class="p-4" style="background-color: var(--bg-blue);">
-                        <div class="d-flex gap-3 text-white align-items-center ">
-                            <i class="fas fa-calendar" style="font-size: 14px; color: var(--primary);"></i>
-                            <h6 class="m-0" style="font-size: 14px;">JAN 05 2024</h6>
-                            <i class="fas fa-user-alt" style="font-size: 14px; color: var(--primary);"></i>
-                            <h6 class="m-0" style="font-size: 14px;">JOHN DOE</h6>
+                        <div class="d-flex text-white  ">
+                            <i class="fas fa-calendar me-1" style="font-size: 14px; color: var(--primary);"></i>
+                            <h6 class="m-0 me-3" style="font-size: 13px;">JAN 05 2024</h6>
+                            <i class="fas fa-user-alt me-1" style="font-size: 14px; color: var(--primary);"></i>
+                            <h6 class="m-0" style="font-size: 13px;">JOHN DOE</h6>
                         </div>
                         <h5 class="my-3" ><a class="text-white fw-bold  blog-link"  href="#">How To Start Initiating An Startup In Few Days.</a></h5>
                         <p class="text-white opacity-75">Financial experts support or help you to to find out which way you can raise your funds more...</p>
                         <button class="blog-btn"> <i class="fas fa-long-arrow-alt-right pe-2" style="color: var(--primary);"></i> READ MORE</button>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="position-relative">
                         <img src="images/news-3.jpg" class="img-fluid" alt="">
                         <button class="position-absolute bottom-0 start-0 no-hover">Finance</button>
                     </div>
                     <div class="p-4" style="background-color: var(--bg-blue);">
-                        <div class="d-flex gap-3 text-white align-items-center ">
-                            <i class="fas fa-calendar" style="font-size: 14px; color: var(--primary);"></i>
-                            <h6 class="m-0" style="font-size: 14px;">JAN 05 2024</h6>
-                            <i class="fas fa-user-alt" style="font-size: 14px; color: var(--primary);"></i>
-                            <h6 class="m-0" style="font-size: 14px;">JOHN DOE</h6>
+                        <div class="d-flex text-white  ">
+                            <i class="fas fa-calendar me-1" style="font-size: 14px; color: var(--primary);"></i>
+                            <h6 class="m-0 me-3" style="font-size: 13px;">JAN 05 2024</h6>
+                            <i class="fas fa-user-alt me-1" style="font-size: 14px; color: var(--primary);"></i>
+                            <h6 class="m-0" style="font-size: 13px;">JOHN DOE</h6>
                         </div>
                         <h5 class="my-3" ><a class="text-white fw-bold  blog-link"  href="#">Financial Experts Support Help You To Find Out.</a></h5>
                         <p class="text-white opacity-75">Financial experts support or help you to to find out which way you can raise your funds more...</p>
@@ -214,6 +217,53 @@
             </div>
         </div>
     </section>
+
+    <footer id="foot" style="margin: 100px 0;">
+        <div class="container">
+            <div class="row gy-5 text-white">
+                <div class="col-lg-3 col-md-6">
+                    <img src="images/logo.svg" alt="">
+                    <h6 class="my-3" style="line-height: 1.5;">Our success in creating business solutions is due in large part to our talented and highly committed team.</h6>
+                    <i class="fab fa-facebook footer-icon"></i>
+                    <i class="fab fa-twitch footer-icon"></i>
+                    <i class="fab fa-youtube footer-icon"></i>
+                    <i class="fab fa-instagram footer-icon" style="padding: 11px;"></i>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mt-3 mb-5 fw-bold footer-header position-relative">Useful Links</h5>
+                    <ul class="p-0">
+                        <li class=" mt-3"><a class="footer-link" href="">Tournaments</a></li>
+                        <li class=" mt-3"><a class="footer-link" href="">Help Center</a></li>
+                        <li class=" mt-3"><a class="footer-link" href="">Privacy and Policy</a></li>
+                        <li class=" mt-3"><a class="footer-link" href="">Terms of Use</a></li>
+                        <li class=" mt-3"><a class="footer-link" href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mt-3 mb-5 fw-bold footer-header position-relative">Contact Us</h5>
+                    <ul class="p-0">
+                        <li class="mt-3">
+                            <h6 style="color: var(--primary);">LOCATION:</h6>
+                            <a href="#" class="footer-link"><h6>153 Williamson Plaza, Maggieberg, MT 09514</h6></a>
+                        </li>
+                        <li class="mt-3">
+                            <h6 style="color: var(--primary);">JOIN US:</h6>
+                            <a href="#" class="footer-link"><h6>info@unigine.com</h6></a>
+                        </li>
+                        <li class="mt-3">
+                            <h6 style="color: var(--primary);">PHONE:</h6>
+                            <a href="#" class="footer-link"><h6>01+(23)456-7890</h6></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mt-3 mb-5 fw-bold footer-header position-relative">Newsletter Sign Up</h5>
+                    <input type="email" placeholder="Your Email" class="footer-input">
+                    <button class="btn d-block mt-3">Subscribe Now</button>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
