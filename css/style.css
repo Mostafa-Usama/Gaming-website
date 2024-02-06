@@ -62,6 +62,8 @@ textarea {
 
 section {
     margin-top: 70px;
+    opacity: 0;
+    transition: 1s opacity;
 }
 
 .btn,
@@ -124,6 +126,8 @@ a{
 main{
     /* height: 100vh; */
     padding-top: 100px;
+    opacity: 0;
+    transition: 1.5s opacity;
 }
 h1{
     margin: 20px 0;
@@ -221,7 +225,14 @@ main .images::after{
 .scroll-btn{
     width: 40px;
     clip-path: polygon(0% 0%, 70% 0, 100% 30%, 100% 100%, 0 100%);
-        
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s opacity;
+    
+}
+.scroll-btn.visible{
+    visibility: visible;
+    opacity: 1;
 }
 
 .footer-icon{
@@ -281,7 +292,7 @@ main .images::after{
         position: fixed;
         top: 85px;
         right: -100%;
-        width: 80%;
+        width: 50%;
         background-color: var(--bg-blue);
         padding: 0px 30px;
         overflow: hidden;
@@ -325,6 +336,9 @@ main .images::after{
     }
     .team-logo{
         width: 100px;
+    }
+    .menu{
+        width: 80%;
     }
    
 }
